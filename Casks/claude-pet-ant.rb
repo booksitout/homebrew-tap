@@ -10,7 +10,7 @@ cask "claude-pet-ant" do
   depends_on macos: ">= :ventura"
 
   app "Claude Pet Ant.app", target: "~/Applications/Claude Pet Ant.app"
-  binary "~/Applications/Claude Pet Ant.app/Contents/MacOS/claude-pet-ant"
+  binary "#{Dir.home}/Applications/Claude Pet Ant.app/Contents/MacOS/claude-pet-ant"
 
   # removes its Claude Code hooks and status line, which would otherwise point at a deleted app
   uninstall_preflight do
