@@ -14,8 +14,8 @@ Installs to `~/Applications`. Open it once and click **Connect** to hook it up t
 
 ```sh
 brew upgrade --cask claude-pet-ant
-brew uninstall --cask claude-pet-ant        # also removes its Claude Code hooks
-brew uninstall --zap --cask claude-pet-ant  # and its settings in ~/.config/claude-pet-ant
+brew uninstall --cask claude-pet-ant        # leaves its (now inert) Claude Code hooks in place
+brew uninstall --zap --cask claude-pet-ant  # also removes the hooks, login agent and ~/.config/claude-pet-ant
 ```
 
 The app is signed with a Developer ID and notarized by Apple. The DMGs are attached to this repo's releases.
