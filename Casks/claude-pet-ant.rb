@@ -1,6 +1,6 @@
 cask "claude-pet-ant" do
-  version "0.1.5"
-  sha256 "61170d9a5bea10a9938ccb709d22ba912d883282cc15a3d3e0e48e3ba0e06a43"
+  version "0.1.6"
+  sha256 "d046baa5e03c7b85cb311eac10588bbb93eaa6d47d156b2fb2611cd87d80c916"
 
   url "https://github.com/booksitout/homebrew-tap/releases/download/claude-pet-ant-v#{version}/claude-pet-ant.dmg"
   name "Claude Pet Ant"
@@ -9,15 +9,15 @@ cask "claude-pet-ant" do
 
   depends_on macos: :ventura
 
-  app "Claude Pet Ant.app", target: "~/Applications/Claude Pet Ant.app"
-  binary "#{Dir.home}/Applications/Claude Pet Ant.app/Contents/MacOS/claude-pet-ant"
+  app "Claude Pet Ant.app"
+  binary "#{appdir}/Claude Pet Ant.app/Contents/MacOS/claude-pet-ant"
 
   # also runs on every upgrade, so only quit; the login agent restarts the new version
   uninstall quit: "com.jinkyumpark.claude-pet-ant"
 
   zap launchctl: "com.jinkyumpark.claude-pet-ant",
       script:    {
-        executable:   "#{Dir.home}/Applications/Claude Pet Ant.app/Contents/MacOS/claude-pet-ant",
+        executable:   "#{appdir}/Claude Pet Ant.app/Contents/MacOS/claude-pet-ant",
         args:         ["uninstall", "--keep-app"],
         must_succeed: false,
       },

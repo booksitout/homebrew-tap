@@ -10,7 +10,7 @@ An ant colony on your desktop that mirrors your Claude Code sessions: one worker
 brew install --cask booksitout/tap/claude-pet-ant
 ```
 
-Installs to `~/Applications`. Open it once and click **Connect** to hook it up to Claude Code (sessions already open need `claude --continue`).
+Installs to `/Applications`. Open it once and click **Connect** to hook it up to Claude Code (sessions already open need `claude --continue`).
 
 ```sh
 brew upgrade --cask claude-pet-ant
