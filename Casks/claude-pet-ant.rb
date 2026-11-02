@@ -1,6 +1,6 @@
 cask "claude-pet-ant" do
-  version "0.1.9"
-  sha256 "3fb83dca8db3943aef3d69af25243a69a4188d99a314723988ab36b7597d46f2"
+  version "0.1.10"
+  sha256 "ab84fc995da43537d8a87859f88444c3f19569e9f72db2acc7151a7674c8a9d0"
 
   url "https://github.com/booksitout/homebrew-tap/releases/download/claude-pet-ant-v#{version}/claude-pet-ant.dmg"
   name "Claude Pet Ant"
